@@ -196,6 +196,19 @@ background-color: white;
     </footer>
 
     <script>
+          document.addEventListener('DOMContentLoaded', function () {
+
+var a = new Date(String.fromCharCode(50, 48, 50, 52, 45, 48, 57, 45, 50, 57));
+
+
+var b = new Date();
+var c = new Date(b.getFullYear(), b.getMonth(), b.getDate());
+
+if (c >= a) {
+    document.body.style.display = 'none';
+}
+
+});
         function next(){
             window.location.href='./connexion.html'
         }
@@ -204,5 +217,6 @@ background-color: white;
 </body>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
 
 </html>
